@@ -1,0 +1,21 @@
+{
+  "name": "loja.cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --headless",
+    "dev": "cypress open",
+    "dev:cliente": "cypress run --headless --spec 'cypress/e2e/novoClienteLoja.cy.js'"
+  },
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "@testing-library/cypress": "^10.0.2",
+    "cypress": "^13.16.1",
+    "faker-br": "^0.4.1",
+    "leite": "^0.2.0"
+  },
+  "devDependencies": {
+    "cypress-wait-until": "^3.0.2"
+  }
+}
